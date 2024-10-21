@@ -5,12 +5,13 @@ spring:
   application:
     name: as222s5_t09_be
   r2dbc:
-    url: r2dbc:postgresql://ep-snowy-rice-a4snra3l.us-east-1.aws.neon.tech/db_chatgpt?sslmode=require
-    username: db_chatgpt_owner
-    password: Wk07DoRIaQmX
-    #url: ${DATABASE_URL}
-    #username: ${DATABASE_USERNAME}
-    #password: ${DATABASE_PASSWORD}
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    #url: r2dbc:postgresql://ep-snowy-rice-a4snra3l.us-east-1.aws.neon.tech/db_chatgpt?sslmode=require
+    #username: db_chatgpt_owner
+    #password: Wk07DoRIaQmX
   contentmoderator:
-    apikey: 5258e2b9edmsh19d0d7a4a0cdc57p18c749jsn9a0d4349d129
-    #apikey: ${RAPIDAPI_KEY}
+    apikey: ${RAPIDAPI_KEY}
+    #apikey: 5258e2b9edmsh19d0d7a4a0cdc57p18c749jsn9a0d4349d129
+
