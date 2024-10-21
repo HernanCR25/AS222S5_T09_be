@@ -35,4 +35,3 @@ public class ChatGptService {
         return chatGptRepository.findAll();
     }
 }
-
