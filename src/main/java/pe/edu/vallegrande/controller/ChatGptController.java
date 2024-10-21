@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class ChatGptController {
-
+    
     private final ChatGptService chatGptService;
 
     @PostMapping("/ask")
