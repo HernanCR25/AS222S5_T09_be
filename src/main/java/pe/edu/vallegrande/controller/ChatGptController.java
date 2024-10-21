@@ -23,4 +23,3 @@ public class ChatGptController {
         return chatGptService.getAllChatGptModels();
     }
 }
-
