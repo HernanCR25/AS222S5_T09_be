@@ -13,4 +13,4 @@ spring:
     #password: ${DATABASE_PASSWORD}
   contentmoderator:
     apikey: 5258e2b9edmsh19d0d7a4a0cdc57p18c749jsn9a0d4349d129
-    #apikey: ${RAPIDAPI_KEY} 
+    #apikey: ${RAPIDAPI_KEY}
