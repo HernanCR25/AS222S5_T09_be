@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    image: hernancr/as222s5_t09_be
+    image: hernancr/as222s5_t09_bee:latest
     ports:
       - "8085:8085"
     environment:
