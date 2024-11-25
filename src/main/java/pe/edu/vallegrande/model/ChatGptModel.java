@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
+import org.springframework.data.relational.core.mapping.Column;
+
 import java.time.LocalDateTime;
 
 @Data
@@ -16,8 +18,16 @@ public class ChatGptModel {
 
     @Id
     private Long id;
-    private String consulta;
-    private String respuesta;
-    private LocalDateTime hora;
-}
 
+    @Column("consulta")
+    private String consulta;
+
+    @Column("respuesta")
+    private String respuesta;
+
+    @Column("hora")
+    private LocalDateTime hora;
+
+    @Column("estado")
+    private String estado;
+}
