@@ -12,6 +12,6 @@ spring:
     #username: db_chatgpt_owner
     #password: Wk07DoRIaQmX
   contentmoderator:
-    apikey: ${RAPIDAPI_KEY}
+    rapidApiKey: ${RAPIDAPI_KEY}
     #apikey: 5258e2b9edmsh19d0d7a4a0cdc57p18c749jsn9a0d4349d129
 

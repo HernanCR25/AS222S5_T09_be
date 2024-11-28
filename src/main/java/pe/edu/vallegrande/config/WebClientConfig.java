@@ -14,7 +14,7 @@ public class WebClientConfig {
     @Bean
     public WebClient webClient(WebClient.Builder builder) {
         return builder.baseUrl("https://chatgpt-api8.p.rapidapi.com")
-                .defaultHeader("x-rapidapi-key", "rapidApiKey" )
+                .defaultHeader("x-rapidapi-key", rapidApiKey)
                 .defaultHeader("x-rapidapi-host", "chatgpt-api8.p.rapidapi.com")
                 .defaultHeader("Content-Type", "application/json; charset=UTF-8")
                 .build();
