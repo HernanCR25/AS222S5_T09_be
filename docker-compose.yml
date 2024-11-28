@@ -1,18 +1,18 @@
-version: '2'
+version: '3'
 
 services:
-  back:
-    image: hernancr/as222s5_t09_bee:latest
+  back2:
+    image: hernancr/as222s5_t09_bee
     ports:
       - "8085:8085"
     environment:
-      DATABASE_URL: ${DATABASE_URL}
-      DATABASE_USERNAME: ${DATABASE_USERNAME}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
-      RAPIDAPI_KEY: ${RAPIDAPI_KEY} 
-  front:
-    image: hernancr/apigptfrontend:latest
+      DATABASE_URL: r2dbc:postgresql://ep-snowy-rice-a4snra3l.us-east-1.aws.neon.tech/db_chatgpt?sslmode=require
+      DATABASE_USERNAME: db_chatgpt_owner
+      DATABASE_PASSWORD: Wk07DoRIaQmX
+      RAPIDAPI_KEY: c93d58435emsh90041630bebe365p1fa958jsn943d66de69d7
+  front2:
+    image: hernancr/apigptfrontend
     ports:
       - "4200:4200"
     environment:
-      API_BACKEND: ${API_BACKEND}
+      API_BACKEND: https://potential-meme-gjpqrj4ppvr3p4q7-8085.app.github.dev/api
