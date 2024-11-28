@@ -11,7 +11,7 @@ COPY --from=builder /app/target/*.jar app.jar
 ENV DATABASE_URL=${DATABASE_URL} \
     DATABASE_USERNAME=${DATABASE_USERNAME} \
     DATABASE_PASSWORD=${DATABASE_PASSWORD} \
-    API_KEY=${API_KEY}
+    API_KEY=${RAPIDAPI_KEY}
 
 EXPOSE 8085
 ENTRYPOINT ["java", "-jar", "app.jar"]
